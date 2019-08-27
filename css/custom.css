@@ -1,0 +1,135 @@
+/*heigh 100%*/
+html,body{height:100% ;}
+
+.bloco{min-height: 100%;padding-top: 94px;}
+
+.blue-logo{
+       background-color:  #2dc7d0;
+}
+.home{height: 100%; animation: mudarBg 20s infinite; background-image: url('../img/bg.jpg'); background-repeat: no-repeat;
+    background-size: cover;}
+.baner h2{font-size: 2.5rem; font-weight: 900px;text-transform: uppercase;}
+/*Logo*/
+.logo_text{
+    font-size: 0; margin: 0;
+}
+.logo_img{width: 100px;margin-top: 15px;}
+
+.baner p{font-size: 1.5rem;line-height: 1.8rem;}
+
+header nav{
+    color: #fff;
+    /*background-color: ;*/
+    width: 100%;
+    height: 94px;
+    line-height: 94px;
+    float: right
+  }
+
+  header nav.nav-extended .nav-wrapper {
+    min-height: 94px;
+    height: auto;
+  }
+  .navbar ul a:hover{
+     color: #2dc7d0;
+  }
+  .navbar-fixed {
+    position: absolute;
+    height: 94px;
+    z-index: 997;
+  }
+  .navbar{background-color: #000; transition: background 0.5s linear;}
+
+  nav i,
+nav [class^="mdi-"], nav [class*="mdi-"],
+nav i.material-icons {
+  display: block;
+  font-size: 24px;
+  height: 94px;
+  line-height: 94px;
+}
+.row{
+  margin-bottom: 0;
+}
+.tabs{background-color: #222;}
+.tabs .tab a{color: #fff;}
+.tabs .tab a:hover, .tabs .tab a.active{color:#2dc7d0;}
+.sidenav{
+  background: url('../img/textura2.png');
+}
+
+/*Animação Home*/
+@keyframes mudarBg   {
+    40% {background-image: url('../img/bg2.jpg') }
+    80% {background-image: url('../img/bg3.jpg') }
+    100% {background-image: url('../img/bg.jpg') }
+
+}
+.titulo{font-size: 2rem;text-transform: uppercase;}
+.titulo::after {content: '';display: block;width: 100px; border-top: 1px solid #2dc7d0;
+  margin: 15px auto;}
+
+/*Sobre*/
+
+.sobre{background-image: url('../img/textura1.png');}
+
+.sobre p{line-height: 1.8rem; text-align: justify;}
+.sobre .missao-visao-valores{padding: 20px 0;margin-top: 35px;}
+.sobre .missao-visao-valores .icon{color: #fff;}
+.sobre .missao-visao-valores h3{font-size: 1.3rem;color:#fff;text-transform: uppercase;}
+.sobre .missao-visao-valores p{text-align: center;color: #fff;}
+
+/*Serviços*/
+.servicos{background-image: url('../img/textura2.png');}
+.servicos p{color: #fff;}
+.servicos .card-content p{color: #000;}
+
+
+
+/*Unidades*/
+.unidades{background-image: url('../img/bg-unidades.jpg');background-repeat: no-repeat;}
+.unidades p{color: #fff;}
+.unidades article p{line-height: 1.8rem;}
+
+
+/*Contato*/
+.contato{background-image: url('../img/textura1.png');background-repeat: no-repeat;}
+
+.contato .mapa{min-height: 560px;}
+.contato .mapa iframe{width: 100%;min-height: 500px;margin: none;}
+.contato .informacoes{background-image: url('../img/textura2.png');min-height: 560px;padding: 30px;}
+.contato .informacoes h4{text-transform: uppercase;font-weight: 900px;font-size: 1.2rem;}
+.contato .formulario {min-height: 560px; padding: 30px;}
+.contato .formulario h4{text-transform: uppercase;}
+/*Depoimento*/
+.depoimentos .titulo::after {border-color:  #fff;text-transform: uppercase;}
+.depoimentos img{width: 100px;}
+.depoimentos h4{font-size: 1.2rem;font-weight: 900;}
+.rodape{background-image: url('../img/bg-rodape.jpg');background-repeat: no-repeat;background-size: cover;
+padding: 30px 0}
+
+/*Media*/
+@media only screen and (max-width: 480px) {
+   .card-image-horizontal{visibility: hidden;} 
+  }
+  
+
+@media only screen and (min-width: 600px) {
+    .baner {padding-top: 4.5rem}
+    .baner h2{font-size: 4rem}
+    .container {
+      width: 90%;
+    }
+      
+    
+    
+  }
+  
+  
+  @media only screen and (min-width: 993px) {
+    .baner {padding-top: 5rem}
+    .baner h2{font-size: 5rem}
+    .container {
+      width: 90%;
+    }
+  }
